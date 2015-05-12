@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NotasViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    
+    NotasViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:]
+    
+    //terminar de instanciar view: http://stackoverflow.com/questions/26753925/set-initial-viewcontroller-in-appdelegate-swift
+    
     return YES;
 }
 

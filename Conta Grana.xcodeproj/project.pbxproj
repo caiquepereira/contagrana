@@ -13,7 +13,7 @@
 		8F373B5A1B01283D006C3E9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F373B591B01283D006C3E9E /* Images.xcassets */; };
 		8F373B5D1B01283D006C3E9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F373B5B1B01283D006C3E9E /* LaunchScreen.xib */; };
 		8F373B691B01283E006C3E9E /* Conta_GranaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F373B681B01283E006C3E9E /* Conta_GranaTests.m */; };
-		8FF5FF621B014B7A00901D60 /* teste.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FF5FF611B014B7A00901D60 /* teste.xib */; };
+		8FDE83AE1B026DAE002B0717 /* NotasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDE83AD1B026DAE002B0717 /* NotasViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,8 @@
 		8F373B621B01283D006C3E9E /* Conta GranaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Conta GranaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F373B671B01283D006C3E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F373B681B01283E006C3E9E /* Conta_GranaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Conta_GranaTests.m; sourceTree = "<group>"; };
-		8FF5FF611B014B7A00901D60 /* teste.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = teste.xib; sourceTree = "<group>"; };
+		8FDE83AC1B026DAE002B0717 /* NotasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotasViewController.h; sourceTree = "<group>"; };
+		8FDE83AD1B026DAE002B0717 /* NotasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotasViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +83,9 @@
 			children = (
 				8F373B501B01283D006C3E9E /* AppDelegate.h */,
 				8F373B511B01283D006C3E9E /* AppDelegate.m */,
+				8FDE83AC1B026DAE002B0717 /* NotasViewController.h */,
+				8FDE83AD1B026DAE002B0717 /* NotasViewController.m */,
 				8F373B561B01283D006C3E9E /* Main.storyboard */,
-				8FF5FF611B014B7A00901D60 /* teste.xib */,
 				8F373B591B01283D006C3E9E /* Images.xcassets */,
 				8F373B5B1B01283D006C3E9E /* LaunchScreen.xib */,
 				8F373B4C1B01283D006C3E9E /* Supporting Files */,
@@ -200,7 +202,6 @@
 				8F373B581B01283D006C3E9E /* Main.storyboard in Resources */,
 				8F373B5D1B01283D006C3E9E /* LaunchScreen.xib in Resources */,
 				8F373B5A1B01283D006C3E9E /* Images.xcassets in Resources */,
-				8FF5FF621B014B7A00901D60 /* teste.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +221,7 @@
 			files = (
 				8F373B521B01283D006C3E9E /* AppDelegate.m in Sources */,
 				8F373B4F1B01283D006C3E9E /* main.m in Sources */,
+				8FDE83AE1B026DAE002B0717 /* NotasViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
