@@ -19,12 +19,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    /*
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
     
-    NotasViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:]
+    NotasViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"MainStoryboard"];
+    // determine the initial view controller here and instantiate   it with [storyboard instantiateViewControllerWithIdentifier:<storyboard id>];
     
-    //terminar de instanciar view: http://stackoverflow.com/questions/26753925/set-initial-viewcontroller-in-appdelegate-swift
+    self.window.rootViewController = viewController;
+    [self.window makeKeyAndVisible];
+
+    
+*/
     
     return YES;
 }
