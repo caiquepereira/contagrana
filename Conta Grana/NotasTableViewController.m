@@ -16,7 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -38,8 +37,29 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 6;
+    return 9;
 }
+
+
+
+- (IBAction)calculaTotal:(id)sender {
+
+    _total=0;
+    
+    _total=_total+2*[_qtd2Reais.text floatValue];
+    _total=_total+5*[_qtd5Reais.text floatValue];
+    _total=_total+10*[_qtd10Reais.text floatValue];
+    _total=_total+20*[_qtd20Reais.text floatValue];
+    _total=_total+50*[_qtd50Reais.text floatValue];
+    _total=_total+100*[_qtd100Reais.text floatValue];
+
+    
+    
+    _lblTotalNotas.text=[NSString stringWithFormat:@"%.2f", _total];
+    
+    
+}
+
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

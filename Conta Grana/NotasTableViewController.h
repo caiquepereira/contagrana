@@ -9,5 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface NotasTableViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UITextField *qtd2Reais;
+@property (weak, nonatomic) IBOutlet UITextField *qtd5Reais;
+@property (weak, nonatomic) IBOutlet UITextField *qtd10Reais;
+@property (weak, nonatomic) IBOutlet UITextField *qtd20Reais;
+@property (weak, nonatomic) IBOutlet UITextField *qtd50Reais;
+@property (weak, nonatomic) IBOutlet UITextField *qtd100Reais;
+@property (weak, nonatomic) IBOutlet UILabel *lblTotalNotas;
+
+
+@property (nonatomic) float total;
 
 @end
