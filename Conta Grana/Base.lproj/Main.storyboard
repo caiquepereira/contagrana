@@ -23,7 +23,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="2 reais" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nSI-cG-rJI">
                                                     <rect key="frame" x="82" y="0.0" width="518" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nota2reais" translatesAutoresizingMaskIntoConstraints="NO" id="7XN-kC-8pa">
                                                     <rect key="frame" x="8" y="0.0" width="66" height="43"/>
@@ -42,7 +42,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="5 reais" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J31-1z-Zxv">
                                                     <rect key="frame" x="84" y="0.0" width="516" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -58,7 +58,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="10 reais" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P0Q-Dd-Bhg">
                                                     <rect key="frame" x="84" y="0.0" width="516" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -74,7 +74,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="20 reais" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wh5-AH-5ch">
                                                     <rect key="frame" x="84" y="0.0" width="516" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -90,7 +90,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="50 reais" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U08-Fj-qJz">
                                                     <rect key="frame" x="84" y="0.0" width="516" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -106,7 +106,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="100 reais" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyu-QP-Pys">
                                                     <rect key="frame" x="84" y="0.0" width="516" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
