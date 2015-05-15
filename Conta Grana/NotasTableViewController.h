@@ -20,4 +20,8 @@
 
 @property (nonatomic) float total;
 
+
+
+
+
 @end

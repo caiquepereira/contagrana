@@ -21,7 +21,20 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                  initWithTarget:self
+                                  action:@selector(dismissKeyboard)];
+    
+    
+    [self.view addGestureRecognizer:tap];
+    
 }
+
+-(void)dismissKeyboard {
+    [self.view endEditing:YES];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -43,7 +56,7 @@
 
 
 - (IBAction)calculaTotal:(id)sender {
-
+    [self.view endEditing:YES];
     _total=0;
     
     _total=_total+2*[_qtd2Reais.text floatValue];
@@ -54,11 +67,12 @@
     _total=_total+100*[_qtd100Reais.text floatValue];
 
     
-    
     _lblTotalNotas.text=[NSString stringWithFormat:@"%.2f", _total];
     
     
 }
+
+
 
 
 /*
