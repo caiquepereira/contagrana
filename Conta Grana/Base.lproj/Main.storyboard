@@ -20,13 +20,24 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s5q-Gn-fkr" id="qLd-si-Ro1">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8i-UQ-MxL">
-                                                    <rect key="frame" x="546" y="5" width="37" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8i-UQ-MxL">
+                                                    <rect key="frame" x="547" y="0.0" width="53" height="43"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="53" id="TRW-Tq-tJP"/>
+                                                    </constraints>
                                                     <state key="normal" title="Zerar">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="zerarButtonClicked:" destination="PeY-6I-XGQ" eventType="touchUpInside" id="uj3-z3-wnj"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="I8i-UQ-MxL" secondAttribute="bottom" id="FW2-bf-JnW"/>
+                                                <constraint firstAttribute="trailing" secondItem="I8i-UQ-MxL" secondAttribute="trailing" id="HL6-pS-pg3"/>
+                                                <constraint firstItem="I8i-UQ-MxL" firstAttribute="top" secondItem="qLd-si-Ro1" secondAttribute="top" id="cFz-vn-8dZ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>

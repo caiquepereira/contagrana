@@ -27,12 +27,27 @@
                                   action:@selector(dismissKeyboard)];
     
     
+    
     [self.view addGestureRecognizer:tap];
     
 }
 
 -(void)dismissKeyboard {
     [self.view endEditing:YES];
+}
+
+
+- (IBAction)zerarButtonClicked:(id)sender {
+    _qtd2Reais.text = @"";
+    _qtd5Reais.text = @"";
+    _qtd10Reais.text = @"";
+    _qtd20Reais.text = @"";
+    _qtd50Reais.text = @"";
+    _qtd100Reais.text = @"";
+    
+    _total=0;
+    _lblTotalNotas.text=[NSString stringWithFormat:@"%.2f", _total];
+    
 }
 
 
@@ -50,7 +65,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 9;
+    return 10;
 }
 
 
