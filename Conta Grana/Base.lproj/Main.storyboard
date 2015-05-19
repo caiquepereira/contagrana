@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PeY-6I-XGQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PeY-6I-XGQ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--Notas Table View Controller-->
@@ -50,9 +50,13 @@
                                                     <rect key="frame" x="82" y="0.0" width="518" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <connections>
+                                                        <action selector="digitandoQtd2Reais:" destination="PeY-6I-XGQ" eventType="editingDidBegin" id="Jif-9J-Hdk"/>
+                                                    </connections>
                                                 </textField>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nota2reais" translatesAutoresizingMaskIntoConstraints="NO" id="7XN-kC-8pa">
                                                     <rect key="frame" x="8" y="0.0" width="66" height="43"/>
+                                                    <accessibility key="accessibilityConfiguration" label=""/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -69,6 +73,9 @@
                                                     <rect key="frame" x="84" y="0.0" width="516" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <connections>
+                                                        <action selector="digitandoQtd5Reais:" destination="PeY-6I-XGQ" eventType="editingDidBegin" id="ljo-Ez-a8W"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -85,6 +92,9 @@
                                                     <rect key="frame" x="84" y="0.0" width="516" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <connections>
+                                                        <action selector="digitandoQtd10Reais:" destination="PeY-6I-XGQ" eventType="editingDidBegin" id="E2c-Iq-gMj"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -101,6 +111,9 @@
                                                     <rect key="frame" x="84" y="0.0" width="516" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <connections>
+                                                        <action selector="digitandoQtd20Reais:" destination="PeY-6I-XGQ" eventType="editingDidBegin" id="d9z-1W-ggX"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -117,6 +130,9 @@
                                                     <rect key="frame" x="84" y="0.0" width="516" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <connections>
+                                                        <action selector="digitandoQtd50Reais:" destination="PeY-6I-XGQ" eventType="editingDidBegin" id="7gP-C1-gS6"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -133,6 +149,9 @@
                                                     <rect key="frame" x="84" y="0.0" width="516" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <connections>
+                                                        <action selector="digitandoQtd100Reais:" destination="PeY-6I-XGQ" eventType="editingDidBegin" id="QDG-Ps-KAO"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -205,6 +224,12 @@
                     </tableView>
                     <connections>
                         <outlet property="lblTotalNotas" destination="bBd-So-v5Y" id="UMY-fB-R0L"/>
+                        <outlet property="nota100ReaisFrente" destination="asT-kq-RgE" id="T1h-RS-Q5q"/>
+                        <outlet property="nota10ReaisFrente" destination="0my-hd-eNA" id="3JB-cP-SZx"/>
+                        <outlet property="nota20ReaisFrente" destination="UU9-XT-8wh" id="joc-CF-Xzg"/>
+                        <outlet property="nota2ReaisFrente" destination="7XN-kC-8pa" id="ftr-N2-TwM"/>
+                        <outlet property="nota50ReaisFrente" destination="ICm-k9-NFv" id="5oK-a7-vDg"/>
+                        <outlet property="nota5ReaisFrente" destination="vYN-Wy-nWp" id="3e0-Vp-KRG"/>
                         <outlet property="qtd100Reais" destination="jyu-QP-Pys" id="JSV-tT-2Tl"/>
                         <outlet property="qtd10Reais" destination="P0Q-Dd-Bhg" id="EaU-wG-Kvm"/>
                         <outlet property="qtd20Reais" destination="wh5-AH-5ch" id="hVS-7n-ImL"/>
@@ -219,11 +244,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="nota100reais" width="440" height="196"/>
-        <image name="nota10reais" width="380" height="183"/>
-        <image name="nota20reais" width="400" height="183"/>
-        <image name="nota2reais" width="340" height="182"/>
-        <image name="nota50reais" width="420" height="194"/>
-        <image name="nota5reais" width="358" height="182"/>
+        <image name="nota100reais" width="100" height="45"/>
+        <image name="nota10reais" width="100" height="48"/>
+        <image name="nota20reais" width="100" height="46"/>
+        <image name="nota2reais" width="100" height="54"/>
+        <image name="nota50reais" width="100" height="46"/>
+        <image name="nota5reais" width="100" height="51"/>
     </resources>
 </document>

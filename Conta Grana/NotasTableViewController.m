@@ -16,11 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [_nota2ReaisFrente setAccessibilityIdentifier:@"frente"];
+    [_nota5ReaisFrente setAccessibilityIdentifier:@"frente"];
+    [_nota10ReaisFrente setAccessibilityIdentifier:@"frente"];
+    [_nota20ReaisFrente setAccessibilityIdentifier:@"frente"];
+    [_nota50ReaisFrente setAccessibilityIdentifier:@"frente"];
+    [_nota100ReaisFrente setAccessibilityIdentifier:@"frente"];
+
+    
+    
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                   initWithTarget:self
@@ -30,6 +36,36 @@
     
     [self.view addGestureRecognizer:tap];
     
+    
+    UITapGestureRecognizer *singleTap2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(flip2Reais)];
+    singleTap2.numberOfTapsRequired = 1;
+    [_nota2ReaisFrente setUserInteractionEnabled:YES];
+    [_nota2ReaisFrente addGestureRecognizer:singleTap2];
+    
+    UITapGestureRecognizer *singleTap5 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(flip5Reais)];
+    singleTap5.numberOfTapsRequired = 1;
+    [_nota5ReaisFrente setUserInteractionEnabled:YES];
+    [_nota5ReaisFrente addGestureRecognizer:singleTap5];
+    
+    UITapGestureRecognizer *singleTap10 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(flip10Reais)];
+    singleTap10.numberOfTapsRequired = 1;
+    [_nota10ReaisFrente setUserInteractionEnabled:YES];
+    [_nota10ReaisFrente addGestureRecognizer:singleTap10];
+    
+    UITapGestureRecognizer *singleTap20 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(flip20Reais)];
+    singleTap20.numberOfTapsRequired = 1;
+    [_nota20ReaisFrente setUserInteractionEnabled:YES];
+    [_nota20ReaisFrente addGestureRecognizer:singleTap20];
+    
+    UITapGestureRecognizer *singleTap50 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(flip50Reais)];
+    singleTap50.numberOfTapsRequired = 1;
+    [_nota50ReaisFrente setUserInteractionEnabled:YES];
+    [_nota50ReaisFrente addGestureRecognizer:singleTap50];
+    
+    UITapGestureRecognizer *singleTap100 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(flip100Reais)];
+    singleTap100.numberOfTapsRequired = 1;
+    [_nota100ReaisFrente setUserInteractionEnabled:YES];
+    [_nota100ReaisFrente addGestureRecognizer:singleTap100];
 }
 
 -(void)dismissKeyboard {
@@ -84,8 +120,212 @@
     
     _lblTotalNotas.text=[NSString stringWithFormat:@"%.2f", _total];
     
+        
+}
+
+
+
+
+-(void)flip2Reais{
+
+    
+    if ([_nota2ReaisFrente.accessibilityIdentifier  isEqual: @"frente"]) {
+        
+        UIImage *verso2 = [UIImage imageNamed:@"nota2_back"];
+        [UIView transitionWithView:_nota2ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota2ReaisFrente.image = verso2;
+                           } completion:nil];
+        
+        [_nota2ReaisFrente setAccessibilityIdentifier:@"verso"];
+
+        
+    }else{
+        UIImage *frente2 = [UIImage imageNamed:@"nota2reais"];
+        [UIView transitionWithView:_nota2ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota2ReaisFrente.image = frente2;
+                           } completion:nil];
+        
+        [_nota2ReaisFrente setAccessibilityIdentifier:@"frente"];
+
+        
+    }
     
 }
+
+
+-(void)flip5Reais{
+    
+    
+    if ([_nota5ReaisFrente.accessibilityIdentifier  isEqual: @"frente"]) {
+        
+        UIImage *verso5 = [UIImage imageNamed:@"nota5_back"];
+        [UIView transitionWithView:_nota5ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota5ReaisFrente.image = verso5;
+                           } completion:nil];
+        
+        [_nota5ReaisFrente setAccessibilityIdentifier:@"verso"];
+        
+        
+    }else{
+        UIImage *frente5 = [UIImage imageNamed:@"nota5reais"];
+        [UIView transitionWithView:_nota5ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota5ReaisFrente.image = frente5;
+                           } completion:nil];
+        
+        [_nota5ReaisFrente setAccessibilityIdentifier:@"frente"];
+        
+        
+    }
+    
+}
+
+
+-(void)flip10Reais{
+    
+    
+    if ([_nota10ReaisFrente.accessibilityIdentifier  isEqual: @"frente"]) {
+        
+        UIImage *verso10 = [UIImage imageNamed:@"nota10_back"];
+        [UIView transitionWithView:_nota10ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota10ReaisFrente.image = verso10;
+                           } completion:nil];
+        
+        [_nota10ReaisFrente setAccessibilityIdentifier:@"verso"];
+        
+        
+    }else{
+        UIImage *frente10 = [UIImage imageNamed:@"nota10reais"];
+        [UIView transitionWithView:_nota10ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota10ReaisFrente.image = frente10;
+                           } completion:nil];
+        
+        [_nota10ReaisFrente setAccessibilityIdentifier:@"frente"];
+        
+        
+    }
+    
+}
+
+
+-(void)flip20Reais{
+    
+    
+    if ([_nota20ReaisFrente.accessibilityIdentifier  isEqual: @"frente"]) {
+        
+        UIImage *verso20 = [UIImage imageNamed:@"nota20_back"];
+        [UIView transitionWithView:_nota20ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota20ReaisFrente.image = verso20;
+                           } completion:nil];
+        
+        [_nota20ReaisFrente setAccessibilityIdentifier:@"verso"];
+        
+        
+    }else{
+        UIImage *frente20 = [UIImage imageNamed:@"nota20reais"];
+        [UIView transitionWithView:_nota20ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota20ReaisFrente.image = frente20;
+                           } completion:nil];
+        
+        [_nota20ReaisFrente setAccessibilityIdentifier:@"frente"];
+        
+        
+    }
+    
+}
+
+-(void)flip50Reais{
+    
+    
+    if ([_nota50ReaisFrente.accessibilityIdentifier  isEqual: @"frente"]) {
+        
+        UIImage *verso50 = [UIImage imageNamed:@"nota50_back"];
+        [UIView transitionWithView:_nota50ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota50ReaisFrente.image = verso50;
+                           } completion:nil];
+        
+        [_nota50ReaisFrente setAccessibilityIdentifier:@"verso"];
+        
+        
+    }else{
+        UIImage *frente50 = [UIImage imageNamed:@"nota50reais"];
+        [UIView transitionWithView:_nota50ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota50ReaisFrente.image = frente50;
+                           } completion:nil];
+        
+        [_nota50ReaisFrente setAccessibilityIdentifier:@"frente"];
+        
+        
+    }
+    
+}
+
+-(void)flip100Reais{
+    
+    
+    if ([_nota100ReaisFrente.accessibilityIdentifier  isEqual: @"frente"]) {
+        
+        UIImage *verso100 = [UIImage imageNamed:@"nota100_back"];
+        [UIView transitionWithView:_nota100ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota100ReaisFrente.image = verso100;
+                           } completion:nil];
+        
+        [_nota100ReaisFrente setAccessibilityIdentifier:@"verso"];
+        
+        
+    }else{
+        UIImage *frente100 = [UIImage imageNamed:@"nota100reais"];
+        [UIView transitionWithView:_nota100ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota100ReaisFrente.image = frente100;
+                           } completion:nil];
+        
+        [_nota100ReaisFrente setAccessibilityIdentifier:@"frente"];
+        
+        
+    }
+    
+}
+
+
+- (IBAction)digitandoQtd2Reais:(id)sender {
+    [self flip2Reais];
+}
+
+- (IBAction)digitandoQtd5Reais:(id)sender {
+    [self flip5Reais];
+}
+
+- (IBAction)digitandoQtd10Reais:(id)sender {
+    [self flip10Reais];
+}
+
+- (IBAction)digitandoQtd20Reais:(id)sender {
+    [self flip20Reais];
+}
+
+- (IBAction)digitandoQtd50Reais:(id)sender {
+    [self flip50Reais];
+}
+
+- (IBAction)digitandoQtd100Reais:(id)sender {
+    [self flip100Reais];
+}
+
+
+
+
+
 
 
 
