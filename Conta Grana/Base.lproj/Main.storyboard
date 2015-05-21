@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PeY-6I-XGQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hbC-Uq-xZv">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Notas Table View Controller-->
+        <!--Item-->
         <scene sceneID="crs-gl-G9s">
             <objects>
                 <tableViewController id="PeY-6I-XGQ" customClass="NotasTableViewController" sceneMemberID="viewController">
@@ -20,23 +21,19 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s5q-Gn-fkr" id="qLd-si-Ro1">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8i-UQ-MxL">
-                                                    <rect key="frame" x="547" y="0.0" width="53" height="43"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="53" id="TRW-Tq-tJP"/>
-                                                    </constraints>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNZ-s6-LSv">
+                                                    <rect key="frame" x="562" y="7" width="37" height="30"/>
                                                     <state key="normal" title="Zerar">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="zerarButtonClicked:" destination="PeY-6I-XGQ" eventType="touchUpInside" id="uj3-z3-wnj"/>
+                                                        <action selector="zerarButtonClicked:" destination="PeY-6I-XGQ" eventType="touchUpInside" id="Ahx-wY-Tpi"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="I8i-UQ-MxL" secondAttribute="bottom" id="FW2-bf-JnW"/>
-                                                <constraint firstAttribute="trailing" secondItem="I8i-UQ-MxL" secondAttribute="trailing" id="HL6-pS-pg3"/>
-                                                <constraint firstItem="I8i-UQ-MxL" firstAttribute="top" secondItem="qLd-si-Ro1" secondAttribute="top" id="cFz-vn-8dZ"/>
+                                                <constraint firstAttribute="centerY" secondItem="NNZ-s6-LSv" secondAttribute="centerY" id="K5P-hG-hyG"/>
+                                                <constraint firstItem="NNZ-s6-LSv" firstAttribute="trailing" secondItem="qLd-si-Ro1" secondAttribute="trailingMargin" constant="7" id="Ym3-nf-U75"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -222,6 +219,7 @@
                             <outlet property="delegate" destination="PeY-6I-XGQ" id="2ft-gE-QdR"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="p5e-iS-yb1"/>
                     <connections>
                         <outlet property="lblTotalNotas" destination="bBd-So-v5Y" id="UMY-fB-R0L"/>
                         <outlet property="nota100ReaisFrente" destination="asT-kq-RgE" id="T1h-RS-Q5q"/>
@@ -240,7 +238,87 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DcL-KO-HGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="316" y="328"/>
+            <point key="canvasLocation" x="225" y="-248"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="xry-PE-B38">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eyZ-N0-VZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="hHH-LW-mqN" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Am3-cC-gtX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Digite a quantidade de moedas" id="Lnx-I5-gCg">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="W9z-XY-He2">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W9z-XY-He2" id="aqd-vM-OJq">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxt-d4-3hw">
+                                                    <rect key="frame" x="562" y="7" width="37" height="30"/>
+                                                    <state key="normal" title="Zerar">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="Vxt-d4-3hw" secondAttribute="centerY" id="WLg-qi-gj0"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Vxt-d4-3hw" secondAttribute="trailing" constant="-7" id="zk6-1J-hbs"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="a7P-HW-Xfu">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a7P-HW-Xfu" id="yNs-VB-0gt">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6WA-St-iKD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="66" height="43"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="28O-RN-LhJ">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="28O-RN-LhJ" id="nDU-mB-AOw">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="hHH-LW-mqN" id="6ut-y0-kbi"/>
+                            <outlet property="delegate" destination="hHH-LW-mqN" id="PVJ-1p-dkj"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="Ggp-Oe-4PX"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1045" y="-239"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="gZY-oQ-SLP">
+            <objects>
+                <tabBarController id="hbC-Uq-xZv" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5ve-GT-9Hp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PeY-6I-XGQ" kind="relationship" relationship="viewControllers" id="HPn-Fp-drO"/>
+                        <segue destination="hHH-LW-mqN" kind="relationship" relationship="viewControllers" id="Anb-Li-Kqh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lf3-Fb-FwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-299" y="649"/>
         </scene>
     </scenes>
     <resources>
