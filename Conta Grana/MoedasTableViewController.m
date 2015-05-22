@@ -153,7 +153,7 @@
         
     }else{
         UIImage *frente5 = [UIImage imageNamed:@"moeda5centavos"];
-        [UIView transitionWithView:_moeda1CentavoFrente duration:0.5
+        [UIView transitionWithView:_moeda5CentavosFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
                                _moeda5CentavosFrente.image = frente5;
                            } completion:nil];
@@ -205,7 +205,7 @@
     
     if ([_moeda25CentavosFrente.accessibilityIdentifier  isEqual: @"frente"]) {
         
-        UIImage *verso25 = [UIImage imageNamed:@"moeda10centavosBack"];
+        UIImage *verso25 = [UIImage imageNamed:@"moeda25centavosBack"];
         [UIView transitionWithView:_moeda25CentavosFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
                                _moeda25CentavosFrente.image = verso25;
@@ -215,7 +215,7 @@
         
         
     }else{
-        UIImage *frente25 = [UIImage imageNamed:@"moeda10centavos"];
+        UIImage *frente25 = [UIImage imageNamed:@"moeda25centavos"];
         [UIView transitionWithView:_moeda25CentavosFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
                                _moeda25CentavosFrente.image = frente25;
@@ -233,7 +233,7 @@
     
     if ([_moeda50CentavosFrente.accessibilityIdentifier  isEqual: @"frente"]) {
         
-        UIImage *verso50 = [UIImage imageNamed:@"moeda10centavosBack"];
+        UIImage *verso50 = [UIImage imageNamed:@"moeda50centavosBack"];
         [UIView transitionWithView:_moeda50CentavosFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
                                _moeda50CentavosFrente.image = verso50;
@@ -243,7 +243,7 @@
         
         
     }else{
-        UIImage *frente50 = [UIImage imageNamed:@"moeda10centavos"];
+        UIImage *frente50 = [UIImage imageNamed:@"moeda50centavos"];
         [UIView transitionWithView:_moeda50CentavosFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
                                _moeda50CentavosFrente.image = frente50;
@@ -262,7 +262,7 @@
     
     if ([_moeda1RealFrente.accessibilityIdentifier  isEqual: @"frente"]) {
         
-        UIImage *verso1Real = [UIImage imageNamed:@"moeda10centavosBack"];
+        UIImage *verso1Real = [UIImage imageNamed:@"moeda1realBack"];
         [UIView transitionWithView:_moeda1RealFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
                                _moeda1RealFrente.image = verso1Real;
@@ -272,7 +272,7 @@
         
         
     }else{
-        UIImage *frente1Real = [UIImage imageNamed:@"moeda10centavos"];
+        UIImage *frente1Real = [UIImage imageNamed:@"moeda1real"];
         [UIView transitionWithView:_moeda1RealFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
                                _moeda1RealFrente.image = frente1Real;
