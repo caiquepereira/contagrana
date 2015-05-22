@@ -28,7 +28,4 @@
 @property (weak, nonatomic) IBOutlet UIImageView *nota50ReaisFrente;
 @property (weak, nonatomic) IBOutlet UIImageView *nota100ReaisFrente;
 
-
-@property (weak, nonatomic) NSString *imagemClicada;
-
 @end

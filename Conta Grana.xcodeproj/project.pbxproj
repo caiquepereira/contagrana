@@ -14,6 +14,7 @@
 		8F373B5D1B01283D006C3E9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F373B5B1B01283D006C3E9E /* LaunchScreen.xib */; };
 		8F373B691B01283E006C3E9E /* Conta_GranaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F373B681B01283E006C3E9E /* Conta_GranaTests.m */; };
 		8FD9E0AF1B03BEC100EFEB83 /* NotasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9E0AE1B03BEC100EFEB83 /* NotasTableViewController.m */; };
+		8FF97B621B0F701500C318F0 /* MoedasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF97B611B0F701500C318F0 /* MoedasTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		8F373B681B01283E006C3E9E /* Conta_GranaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Conta_GranaTests.m; sourceTree = "<group>"; };
 		8FD9E0AD1B03BEC100EFEB83 /* NotasTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotasTableViewController.h; sourceTree = "<group>"; };
 		8FD9E0AE1B03BEC100EFEB83 /* NotasTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotasTableViewController.m; sourceTree = "<group>"; };
+		8FF97B601B0F701500C318F0 /* MoedasTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoedasTableViewController.h; sourceTree = "<group>"; };
+		8FF97B611B0F701500C318F0 /* MoedasTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoedasTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				8F373B511B01283D006C3E9E /* AppDelegate.m */,
 				8FD9E0AD1B03BEC100EFEB83 /* NotasTableViewController.h */,
 				8FD9E0AE1B03BEC100EFEB83 /* NotasTableViewController.m */,
+				8FF97B601B0F701500C318F0 /* MoedasTableViewController.h */,
+				8FF97B611B0F701500C318F0 /* MoedasTableViewController.m */,
 				8F373B561B01283D006C3E9E /* Main.storyboard */,
 				8F373B591B01283D006C3E9E /* Images.xcassets */,
 				8F373B5B1B01283D006C3E9E /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 			files = (
 				8F373B521B01283D006C3E9E /* AppDelegate.m in Sources */,
 				8FD9E0AF1B03BEC100EFEB83 /* NotasTableViewController.m in Sources */,
+				8FF97B621B0F701500C318F0 /* MoedasTableViewController.m in Sources */,
 				8F373B4F1B01283D006C3E9E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
