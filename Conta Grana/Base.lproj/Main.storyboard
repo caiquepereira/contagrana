@@ -261,6 +261,9 @@
                                                     <state key="normal" title="Zerar">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="zerarButtonClicked:" destination="hHH-LW-mqN" eventType="touchUpInside" id="5gT-KN-ZUE"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -401,6 +404,9 @@
                                                     <state key="normal" title="Calcular">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="calculaTotalMoedas:" destination="hHH-LW-mqN" eventType="touchUpInside" id="sNJ-e3-fcR"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -449,6 +455,7 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="Ggp-Oe-4PX"/>
                     <connections>
+                        <outlet property="lblTotalMoedas" destination="WWg-ai-Xc4" id="WAn-SE-DHC"/>
                         <outlet property="moeda10CentavosFrente" destination="KuO-B9-LBt" id="uGO-fZ-UDj"/>
                         <outlet property="moeda1CentavoFrente" destination="6WA-St-iKD" id="gIq-im-yAP"/>
                         <outlet property="moeda1RealFrente" destination="Nmi-vH-u76" id="xOS-2L-zyz"/>

@@ -28,4 +28,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *moeda1RealFrente;
 
 
+@property (weak, nonatomic) IBOutlet UILabel *lblTotalMoedas;
+
 @end
