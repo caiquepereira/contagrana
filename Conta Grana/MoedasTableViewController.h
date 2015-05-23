@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MoedasTableViewController : UITableViewController
+@interface MoedasTableViewController : UITableViewController <UITabBarControllerDelegate>
+
 @property (weak, nonatomic) IBOutlet UITextField *qtd1Centavo;
 @property (weak, nonatomic) IBOutlet UITextField *qtd5Centavos;
 @property (weak, nonatomic) IBOutlet UITextField *qtd10Centavos;
@@ -17,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *qtd1Real;
 
 
+@property (nonatomic) float totalNotas;
+@property (nonatomic) float totalMoedas;
 @property (nonatomic) float total;
 
 

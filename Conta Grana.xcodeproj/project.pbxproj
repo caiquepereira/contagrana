@@ -13,6 +13,7 @@
 		8F373B5A1B01283D006C3E9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F373B591B01283D006C3E9E /* Images.xcassets */; };
 		8F373B5D1B01283D006C3E9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F373B5B1B01283D006C3E9E /* LaunchScreen.xib */; };
 		8F373B691B01283E006C3E9E /* Conta_GranaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F373B681B01283E006C3E9E /* Conta_GranaTests.m */; };
+		8F57A0111B10247900A49D7D /* SingletonClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F57A0101B10247900A49D7D /* SingletonClass.m */; };
 		8FD9E0AF1B03BEC100EFEB83 /* NotasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9E0AE1B03BEC100EFEB83 /* NotasTableViewController.m */; };
 		8FF97B621B0F701500C318F0 /* MoedasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF97B611B0F701500C318F0 /* MoedasTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,8 @@
 		8F373B621B01283D006C3E9E /* Conta GranaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Conta GranaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F373B671B01283D006C3E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F373B681B01283E006C3E9E /* Conta_GranaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Conta_GranaTests.m; sourceTree = "<group>"; };
+		8F57A00F1B10247900A49D7D /* SingletonClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonClass.h; sourceTree = "<group>"; };
+		8F57A0101B10247900A49D7D /* SingletonClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonClass.m; sourceTree = "<group>"; };
 		8FD9E0AD1B03BEC100EFEB83 /* NotasTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotasTableViewController.h; sourceTree = "<group>"; };
 		8FD9E0AE1B03BEC100EFEB83 /* NotasTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotasTableViewController.m; sourceTree = "<group>"; };
 		8FF97B601B0F701500C318F0 /* MoedasTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoedasTableViewController.h; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 				8FD9E0AE1B03BEC100EFEB83 /* NotasTableViewController.m */,
 				8FF97B601B0F701500C318F0 /* MoedasTableViewController.h */,
 				8FF97B611B0F701500C318F0 /* MoedasTableViewController.m */,
+				8F57A00F1B10247900A49D7D /* SingletonClass.h */,
+				8F57A0101B10247900A49D7D /* SingletonClass.m */,
 				8F373B561B01283D006C3E9E /* Main.storyboard */,
 				8F373B591B01283D006C3E9E /* Images.xcassets */,
 				8F373B5B1B01283D006C3E9E /* LaunchScreen.xib */,
@@ -229,6 +234,7 @@
 				8FD9E0AF1B03BEC100EFEB83 /* NotasTableViewController.m in Sources */,
 				8FF97B621B0F701500C318F0 /* MoedasTableViewController.m in Sources */,
 				8F373B4F1B01283D006C3E9E /* main.m in Sources */,
+				8F57A0111B10247900A49D7D /* SingletonClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

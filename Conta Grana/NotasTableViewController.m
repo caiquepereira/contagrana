@@ -7,15 +7,23 @@
 //
 
 #import "NotasTableViewController.h"
+#import "MoedasTableViewController.h"
+#import "SingletonClass.h"
 
 @interface NotasTableViewController ()
 
 @end
 
-@implementation NotasTableViewController
+@implementation NotasTableViewController{
+    SingletonClass *singleton;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    singleton = [SingletonClass sharedManager];
+    
+    self.tabBarController.delegate=self;
     
     
     [_nota2ReaisFrente setAccessibilityIdentifier:@"frente"];
@@ -68,6 +76,17 @@
     [_nota100ReaisFrente addGestureRecognizer:singleTap100];
 }
 
+
+
+-(void)viewDidLayoutSubviews{
+    _lblTotalNotas.text= [NSString stringWithFormat:@"%.2f", singleton.total];
+
+}
+
+
+
+
+
 -(void)dismissKeyboard {
     [self.view endEditing:YES];
 }
@@ -81,8 +100,9 @@
     _qtd50Reais.text = @"";
     _qtd100Reais.text = @"";
     
-    _total=0;
-    _lblTotalNotas.text=[NSString stringWithFormat:@"%.2f", _total];
+    singleton.totalNotas=0;
+    singleton.total=0;
+    _lblTotalNotas.text=[NSString stringWithFormat:@"%.2f", singleton.total];
     
 }
 
@@ -108,22 +128,21 @@
 
 - (IBAction)calculaTotal:(id)sender {
     [self.view endEditing:YES];
-    _total=0;
+    singleton.totalNotas=0;
     
-    _total=_total+2*[_qtd2Reais.text floatValue];
-    _total=_total+5*[_qtd5Reais.text floatValue];
-    _total=_total+10*[_qtd10Reais.text floatValue];
-    _total=_total+20*[_qtd20Reais.text floatValue];
-    _total=_total+50*[_qtd50Reais.text floatValue];
-    _total=_total+100*[_qtd100Reais.text floatValue];
+    singleton.totalNotas=singleton.totalNotas+2*[_qtd2Reais.text floatValue];
+    singleton.totalNotas=singleton.totalNotas+5*[_qtd5Reais.text floatValue];
+    singleton.totalNotas=singleton.totalNotas+10*[_qtd10Reais.text floatValue];
+    singleton.totalNotas=singleton.totalNotas+20*[_qtd20Reais.text floatValue];
+    singleton.totalNotas=singleton.totalNotas+50*[_qtd50Reais.text floatValue];
+    singleton.totalNotas=singleton.totalNotas+100*[_qtd100Reais.text floatValue];
 
+    singleton.total=singleton.totalNotas+singleton.totalMoedas;
+    _lblTotalNotas.text=[NSString stringWithFormat:@"%.2f", singleton.total];
     
-    _lblTotalNotas.text=[NSString stringWithFormat:@"%.2f", _total];
     
-        
+
 }
-
-
 
 
 -(void)flip2Reais{

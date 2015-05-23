@@ -7,15 +7,25 @@
 //
 
 #import "MoedasTableViewController.h"
+#import "NotasTableViewController.h"
+#import "SingletonClass.h"
 
 @interface MoedasTableViewController ()
 
 @end
 
-@implementation MoedasTableViewController
+@implementation MoedasTableViewController{
+    SingletonClass *singleton;
+
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    singleton = [SingletonClass sharedManager];
+
+    
+    self.tabBarController.delegate=self;
     
     [_moeda1CentavoFrente setAccessibilityIdentifier:@"frente"];
     [_moeda5CentavosFrente setAccessibilityIdentifier:@"frente"];
@@ -69,6 +79,19 @@
     
 }
 
+-(void)viewDidLayoutSubviews{
+    _lblTotalMoedas.text= [NSString stringWithFormat:@"%.2f", singleton.total];
+
+}
+
+
+
+
+
+
+
+
+
 -(void)dismissKeyboard {
     [self.view endEditing:YES];
 }
@@ -82,8 +105,9 @@
     _qtd50Centavos.text = @"";
     _qtd1Real.text = @"";
     
-    _total=0;
-    _lblTotalMoedas.text=[NSString stringWithFormat:@"%.2f", _total];
+    singleton.total=0;
+    singleton.totalMoedas=0;
+    _lblTotalMoedas.text=[NSString stringWithFormat:@"%.2f", singleton.total];
     
     
 }
@@ -91,17 +115,18 @@
 
 - (IBAction)calculaTotalMoedas:(id)sender {
     [self.view endEditing:YES];
-    _total=0;
+    singleton.totalMoedas=0;
     
-    _total=_total+0.01*[_qtd1Centavo.text floatValue];
-    _total=_total+0.05*[_qtd5Centavos.text floatValue];
-    _total=_total+0.10*[_qtd10Centavos.text floatValue];
-    _total=_total+0.25*[_qtd25Centavos.text floatValue];
-    _total=_total+0.50*[_qtd50Centavos.text floatValue];
-    _total=_total+1*[_qtd1Real.text floatValue];
+    singleton.totalMoedas=singleton.totalMoedas+0.01*[_qtd1Centavo.text floatValue];
+    singleton.totalMoedas=singleton.totalMoedas+0.05*[_qtd5Centavos.text floatValue];
+    singleton.totalMoedas=singleton.totalMoedas+0.10*[_qtd10Centavos.text floatValue];
+    singleton.totalMoedas=singleton.totalMoedas+0.25*[_qtd25Centavos.text floatValue];
+    singleton.totalMoedas=singleton.totalMoedas+0.50*[_qtd50Centavos.text floatValue];
+    singleton.totalMoedas=singleton.totalMoedas+1*[_qtd1Real.text floatValue];
     
     
-    _lblTotalMoedas.text=[NSString stringWithFormat:@"%.2f", _total];
+    singleton.total=singleton.totalMoedas+singleton.totalNotas;
+    _lblTotalMoedas.text=[NSString stringWithFormat:@"%.2f", singleton.total];
 
 }
 
@@ -284,7 +309,7 @@
 
     
     
-}
+} 
 
 
 - (IBAction)digitandoQtd1Centavo:(id)sender {
