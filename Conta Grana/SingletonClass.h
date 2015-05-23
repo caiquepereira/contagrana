@@ -13,12 +13,14 @@
     float total;
     float totalMoedas;
     float totalNotas;
+    int vezesCalculadas;
 }
 
 @property (nonatomic, retain) NSString *someProperty;
 @property (nonatomic) float total;
 @property (nonatomic) float totalMoedas;
 @property (nonatomic) float totalNotas;
+@property (nonatomic) int vezesCalculadas;
 
 
 + (id)sharedManager;

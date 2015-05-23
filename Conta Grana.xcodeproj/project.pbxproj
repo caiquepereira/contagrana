@@ -14,6 +14,11 @@
 		8F373B5D1B01283D006C3E9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F373B5B1B01283D006C3E9E /* LaunchScreen.xib */; };
 		8F373B691B01283E006C3E9E /* Conta_GranaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F373B681B01283E006C3E9E /* Conta_GranaTests.m */; };
 		8F57A0111B10247900A49D7D /* SingletonClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F57A0101B10247900A49D7D /* SingletonClass.m */; };
+		8F57A0151B102B6400A49D7D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F57A0141B102B6400A49D7D /* StoreKit.framework */; };
+		8F57A0171B102B8000A49D7D /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F57A0161B102B8000A49D7D /* Chartboost.framework */; };
+		8F57A0191B102B9200A49D7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F57A0181B102B9200A49D7D /* Foundation.framework */; };
+		8F57A01B1B102B9A00A49D7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F57A01A1B102B9A00A49D7D /* CoreGraphics.framework */; };
+		8F57A01D1B102BAE00A49D7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F57A01C1B102BAE00A49D7D /* UIKit.framework */; };
 		8FD9E0AF1B03BEC100EFEB83 /* NotasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9E0AE1B03BEC100EFEB83 /* NotasTableViewController.m */; };
 		8FF97B621B0F701500C318F0 /* MoedasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF97B611B0F701500C318F0 /* MoedasTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -42,6 +47,11 @@
 		8F373B681B01283E006C3E9E /* Conta_GranaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Conta_GranaTests.m; sourceTree = "<group>"; };
 		8F57A00F1B10247900A49D7D /* SingletonClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonClass.h; sourceTree = "<group>"; };
 		8F57A0101B10247900A49D7D /* SingletonClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonClass.m; sourceTree = "<group>"; };
+		8F57A0141B102B6400A49D7D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		8F57A0161B102B8000A49D7D /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
+		8F57A0181B102B9200A49D7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8F57A01A1B102B9A00A49D7D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8F57A01C1B102BAE00A49D7D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8FD9E0AD1B03BEC100EFEB83 /* NotasTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotasTableViewController.h; sourceTree = "<group>"; };
 		8FD9E0AE1B03BEC100EFEB83 /* NotasTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotasTableViewController.m; sourceTree = "<group>"; };
 		8FF97B601B0F701500C318F0 /* MoedasTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoedasTableViewController.h; sourceTree = "<group>"; };
@@ -53,6 +63,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F57A01D1B102BAE00A49D7D /* UIKit.framework in Frameworks */,
+				8F57A01B1B102B9A00A49D7D /* CoreGraphics.framework in Frameworks */,
+				8F57A0191B102B9200A49D7D /* Foundation.framework in Frameworks */,
+				8F57A0151B102B6400A49D7D /* StoreKit.framework in Frameworks */,
+				8F57A0171B102B8000A49D7D /* Chartboost.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +102,7 @@
 		8F373B4B1B01283D006C3E9E /* Conta Grana */ = {
 			isa = PBXGroup;
 			children = (
+				8F57A01E1B102BB600A49D7D /* Frameworks */,
 				8F373B501B01283D006C3E9E /* AppDelegate.h */,
 				8F373B511B01283D006C3E9E /* AppDelegate.m */,
 				8FD9E0AD1B03BEC100EFEB83 /* NotasTableViewController.h */,
@@ -127,6 +143,19 @@
 				8F373B671B01283D006C3E9E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F57A01E1B102BB600A49D7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F57A01C1B102BAE00A49D7D /* UIKit.framework */,
+				8F57A01A1B102B9A00A49D7D /* CoreGraphics.framework */,
+				8F57A0181B102B9200A49D7D /* Foundation.framework */,
+				8F57A0161B102B8000A49D7D /* Chartboost.framework */,
+				8F57A0141B102B6400A49D7D /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +392,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Conta",
+					Grana,
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Conta Grana/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -378,6 +413,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Conta",
+					Grana,
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Conta Grana/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

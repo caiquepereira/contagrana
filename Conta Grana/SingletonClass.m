@@ -15,6 +15,7 @@
 @synthesize total;
 @synthesize totalNotas;
 @synthesize totalMoedas;
+@synthesize vezesCalculadas;
 
 
 
@@ -36,6 +37,7 @@
         total=0;
         totalMoedas=0;
         totalNotas=0;
+        vezesCalculadas=0;
     }
     return self;
 }

@@ -9,6 +9,8 @@
 #import "MoedasTableViewController.h"
 #import "NotasTableViewController.h"
 #import "SingletonClass.h"
+#import <Chartboost/Chartboost.h>
+
 
 @interface MoedasTableViewController ()
 
@@ -127,6 +129,11 @@
     
     singleton.total=singleton.totalMoedas+singleton.totalNotas;
     _lblTotalMoedas.text=[NSString stringWithFormat:@"%.2f", singleton.total];
+    
+    singleton.vezesCalculadas++;
+    if (singleton.vezesCalculadas%3==0) {
+        [Chartboost showInterstitial:CBLocationHomeScreen];
+    }
 
 }
 

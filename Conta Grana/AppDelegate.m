@@ -16,20 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     
-    /*
-    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-    
-    NotasViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"MainStoryboard"];
-    // determine the initial view controller here and instantiate   it with [storyboard instantiateViewControllerWithIdentifier:<storyboard id>];
-    
-    self.window.rootViewController = viewController;
-    [self.window makeKeyAndVisible];
-
-    
-*/
+    // Initialize the Chartboost library
+    [Chartboost startWithAppId:@"555f5ee704b016148e98fdbf"
+                  appSignature:@"127e64ce41d71065dd899ea67f3e863755c893d9"
+                      delegate:self];
     
     return YES;
 }
