@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Notas-->
         <scene sceneID="crs-gl-G9s">
             <objects>
                 <tableViewController id="PeY-6I-XGQ" customClass="NotasTableViewController" sceneMemberID="viewController">
@@ -219,7 +219,7 @@
                             <outlet property="delegate" destination="PeY-6I-XGQ" id="2ft-gE-QdR"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="p5e-iS-yb1"/>
+                    <tabBarItem key="tabBarItem" title="Notas" image="tabBarNotas" id="p5e-iS-yb1"/>
                     <connections>
                         <outlet property="lblTotalNotas" destination="bBd-So-v5Y" id="UMY-fB-R0L"/>
                         <outlet property="nota100ReaisFrente" destination="asT-kq-RgE" id="T1h-RS-Q5q"/>
@@ -240,7 +240,7 @@
             </objects>
             <point key="canvasLocation" x="225" y="-248"/>
         </scene>
-        <!--Item-->
+        <!--Moedas-->
         <scene sceneID="xry-PE-B38">
             <objects>
                 <tableViewController id="hHH-LW-mqN" customClass="MoedasTableViewController" sceneMemberID="viewController">
@@ -459,7 +459,7 @@
                             <outlet property="delegate" destination="hHH-LW-mqN" id="PVJ-1p-dkj"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Ggp-Oe-4PX"/>
+                    <tabBarItem key="tabBarItem" title="Moedas" image="tabBarMoedas" id="Ggp-Oe-4PX"/>
                     <connections>
                         <outlet property="lblTotalMoedas" destination="WWg-ai-Xc4" id="WAn-SE-DHC"/>
                         <outlet property="moeda10CentavosFrente" destination="KuO-B9-LBt" id="uGO-fZ-UDj"/>
@@ -513,5 +513,7 @@
         <image name="nota2reais" width="100" height="54"/>
         <image name="nota50reais" width="100" height="46"/>
         <image name="nota5reais" width="100" height="51"/>
+        <image name="tabBarMoedas" width="25" height="25"/>
+        <image name="tabBarNotas" width="25" height="18"/>
     </resources>
 </document>
