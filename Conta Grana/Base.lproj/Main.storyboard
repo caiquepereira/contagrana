@@ -167,7 +167,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7c-6i-10A">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                                    <rect key="frame" x="0.0" y="-5" width="600" height="48"/>
                                                     <state key="normal" title="Calcular">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -177,10 +177,10 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="w7c-6i-10A" firstAttribute="leading" secondItem="1BF-rF-anw" secondAttribute="leading" id="3fV-c1-Xl3"/>
-                                                <constraint firstAttribute="bottom" secondItem="w7c-6i-10A" secondAttribute="bottom" id="PAK-kI-K8k"/>
-                                                <constraint firstItem="w7c-6i-10A" firstAttribute="top" secondItem="1BF-rF-anw" secondAttribute="top" id="ejt-6l-20d"/>
-                                                <constraint firstAttribute="trailing" secondItem="w7c-6i-10A" secondAttribute="trailing" id="hbT-J6-jbG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="w7c-6i-10A" secondAttribute="bottom" constant="-7.5" id="CUL-zt-HeO"/>
+                                                <constraint firstAttribute="trailing" secondItem="w7c-6i-10A" secondAttribute="trailing" id="IRa-xb-YUt"/>
+                                                <constraint firstItem="w7c-6i-10A" firstAttribute="leading" secondItem="1BF-rF-anw" secondAttribute="leading" id="TaI-gd-2Yo"/>
+                                                <constraint firstItem="w7c-6i-10A" firstAttribute="top" secondItem="1BF-rF-anw" secondAttribute="topMargin" constant="-13" id="UxA-1k-LBa"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -210,6 +210,14 @@
                                                 <constraint firstAttribute="centerX" secondItem="bBd-So-v5Y" secondAttribute="centerX" constant="-2.5" id="t12-6g-5SG"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell hidden="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2hK-ZR-HTf">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2hK-ZR-HTf" id="P3r-M8-cHx">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -393,7 +401,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8iy-7I-oOf">
+                                    <tableViewCell hidden="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8iy-7I-oOf">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8iy-7I-oOf" id="V1p-pY-W4U">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -406,7 +414,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuA-4T-DWr">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                                    <rect key="frame" x="0.0" y="-5" width="600" height="49"/>
                                                     <state key="normal" title="Calcular">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -416,10 +424,10 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="LuA-4T-DWr" secondAttribute="bottom" constant="-8.5" id="J4K-Gf-Drg"/>
-                                                <constraint firstItem="LuA-4T-DWr" firstAttribute="top" secondItem="wOI-dX-Ega" secondAttribute="top" id="JHe-Q7-i77"/>
-                                                <constraint firstItem="LuA-4T-DWr" firstAttribute="leading" secondItem="wOI-dX-Ega" secondAttribute="leading" id="ZPa-AE-ZqR"/>
-                                                <constraint firstAttribute="trailing" secondItem="LuA-4T-DWr" secondAttribute="trailing" id="zxI-d5-yLA"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="LuA-4T-DWr" secondAttribute="bottom" constant="-8.5" id="1ed-2H-Rbu"/>
+                                                <constraint firstItem="LuA-4T-DWr" firstAttribute="top" secondItem="wOI-dX-Ega" secondAttribute="topMargin" constant="-13" id="ER3-QO-78T"/>
+                                                <constraint firstItem="LuA-4T-DWr" firstAttribute="leading" secondItem="wOI-dX-Ega" secondAttribute="leading" id="KdW-WI-9Q5"/>
+                                                <constraint firstAttribute="trailing" secondItem="LuA-4T-DWr" secondAttribute="trailing" id="vNs-Lj-BRJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -450,6 +458,14 @@
                                                 <constraint firstAttribute="centerX" secondItem="WWg-ai-Xc4" secondAttribute="centerX" constant="-2.5" id="F7H-5w-CLy"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell hidden="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jxM-hh-lsk">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jxM-hh-lsk" id="vML-vQ-sUM">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
