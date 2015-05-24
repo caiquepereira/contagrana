@@ -294,8 +294,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     <connections>
-                                                        <action selector="digitandoQtd1Centavo:" destination="hHH-LW-mqN" eventType="editingDidEnd" id="hFU-bH-7sp"/>
-                                                        <action selector="digitandoQtd2Reais:" destination="PeY-6I-XGQ" eventType="editingDidBegin" id="qha-Nd-LSF"/>
+                                                        <action selector="digitandoQtd1Centavo:" destination="hHH-LW-mqN" eventType="editingDidBegin" id="rCG-yr-GaZ"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -314,8 +313,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     <connections>
-                                                        <action selector="digitandoQtd2Reais:" destination="PeY-6I-XGQ" eventType="editingDidBegin" id="VHC-vN-N9b"/>
-                                                        <action selector="digitandoQtd5Centavos:" destination="hHH-LW-mqN" eventType="editingDidEnd" id="lpW-gz-WBv"/>
+                                                        <action selector="digitandoQtd5Centavos:" destination="hHH-LW-mqN" eventType="editingDidBegin" id="J9h-IL-aJu"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -334,8 +332,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     <connections>
-                                                        <action selector="digitandoQtd10Centavos:" destination="hHH-LW-mqN" eventType="editingDidEnd" id="0d7-Uy-fKj"/>
-                                                        <action selector="digitandoQtd2Reais:" destination="PeY-6I-XGQ" eventType="editingDidBegin" id="jfc-ls-JYR"/>
+                                                        <action selector="digitandoQtd10Centavos:" destination="hHH-LW-mqN" eventType="editingDidBegin" id="DNd-t1-uhh"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -354,8 +351,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     <connections>
-                                                        <action selector="digitandoQtd25Centavos:" destination="hHH-LW-mqN" eventType="editingDidEnd" id="DbE-J5-tjH"/>
-                                                        <action selector="digitandoQtd2Reais:" destination="PeY-6I-XGQ" eventType="editingDidBegin" id="oFX-L4-s8R"/>
+                                                        <action selector="digitandoQtd25Centavos:" destination="hHH-LW-mqN" eventType="editingDidBegin" id="tCM-0q-ycl"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -374,8 +370,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     <connections>
-                                                        <action selector="digitandoQtd2Reais:" destination="PeY-6I-XGQ" eventType="editingDidBegin" id="4S0-YR-RyK"/>
-                                                        <action selector="digitandoQtd50Centavos:" destination="hHH-LW-mqN" eventType="editingDidEnd" id="nso-Ux-ee2"/>
+                                                        <action selector="digitandoQtd50Centavos:" destination="hHH-LW-mqN" eventType="editingDidBegin" id="qoC-AN-9Hb"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -394,8 +389,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     <connections>
-                                                        <action selector="digitandoQtd1Real:" destination="hHH-LW-mqN" eventType="editingDidEnd" id="5MU-r0-7Tb"/>
-                                                        <action selector="digitandoQtd2Reais:" destination="PeY-6I-XGQ" eventType="editingDidBegin" id="j6o-M7-Cq9"/>
+                                                        <action selector="digitandoQtd1Real:" destination="hHH-LW-mqN" eventType="editingDidBegin" id="dgu-TZ-V2j"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>

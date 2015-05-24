@@ -78,6 +78,20 @@
     [_nota100ReaisFrente addGestureRecognizer:singleTap100];
 }
 
+-(void)viewDidDisappear:(BOOL)animated{
+    singleton.totalNotas=0;
+    
+    singleton.totalNotas=singleton.totalNotas+2*[_qtd2Reais.text floatValue];
+    singleton.totalNotas=singleton.totalNotas+5*[_qtd5Reais.text floatValue];
+    singleton.totalNotas=singleton.totalNotas+10*[_qtd10Reais.text floatValue];
+    singleton.totalNotas=singleton.totalNotas+20*[_qtd20Reais.text floatValue];
+    singleton.totalNotas=singleton.totalNotas+50*[_qtd50Reais.text floatValue];
+    singleton.totalNotas=singleton.totalNotas+100*[_qtd100Reais.text floatValue];
+    
+    
+}
+
+
 
 
 -(void)viewDidLayoutSubviews{

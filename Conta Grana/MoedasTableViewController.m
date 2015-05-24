@@ -81,13 +81,22 @@
     
 }
 
+-(void)viewDidDisappear:(BOOL)animated{
+    singleton.totalMoedas=0;
+    
+    singleton.totalMoedas=singleton.totalMoedas+0.01*[_qtd1Centavo.text floatValue];
+    singleton.totalMoedas=singleton.totalMoedas+0.05*[_qtd5Centavos.text floatValue];
+    singleton.totalMoedas=singleton.totalMoedas+0.10*[_qtd10Centavos.text floatValue];
+    singleton.totalMoedas=singleton.totalMoedas+0.25*[_qtd25Centavos.text floatValue];
+    singleton.totalMoedas=singleton.totalMoedas+0.50*[_qtd50Centavos.text floatValue];
+    singleton.totalMoedas=singleton.totalMoedas+1*[_qtd1Real.text floatValue];
+}
+
+
 -(void)viewDidLayoutSubviews{
     _lblTotalMoedas.text= [NSString stringWithFormat:@"%.2f", singleton.total];
 
 }
-
-
-
 
 
 
