@@ -120,6 +120,80 @@
     singleton.total=0;
     _lblTotalNotas.text=[NSString stringWithFormat:@"%.2f", singleton.total];
     
+    
+    if ([_nota2ReaisFrente.accessibilityIdentifier  isEqual: @"verso"]) {
+    
+        UIImage *frente2 = [UIImage imageNamed:@"nota2reais"];
+        [UIView transitionWithView:_nota2ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota2ReaisFrente.image = frente2;
+                           } completion:nil];
+        
+        [_nota2ReaisFrente setAccessibilityIdentifier:@"frente"];
+        
+    }
+    
+    if ([_nota5ReaisFrente.accessibilityIdentifier  isEqual: @"verso"]) {
+        
+        UIImage *frente5 = [UIImage imageNamed:@"nota5reais"];
+        [UIView transitionWithView:_nota5ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota5ReaisFrente.image = frente5;
+                           } completion:nil];
+        
+        [_nota5ReaisFrente setAccessibilityIdentifier:@"frente"];
+        
+    }
+    
+    
+    if ([_nota10ReaisFrente.accessibilityIdentifier  isEqual: @"verso"]) {
+        
+        UIImage *frente10 = [UIImage imageNamed:@"nota10reais"];
+        [UIView transitionWithView:_nota10ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota10ReaisFrente.image = frente10;
+                           } completion:nil];
+        
+        [_nota10ReaisFrente setAccessibilityIdentifier:@"frente"];
+        
+    }
+    
+    
+    if ([_nota20ReaisFrente.accessibilityIdentifier  isEqual: @"verso"]) {
+        
+        UIImage *frente20 = [UIImage imageNamed:@"nota20reais"];
+        [UIView transitionWithView:_nota20ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota20ReaisFrente.image = frente20;
+                           } completion:nil];
+        
+        [_nota20ReaisFrente setAccessibilityIdentifier:@"frente"];
+        
+    }
+    
+    if ([_nota50ReaisFrente.accessibilityIdentifier  isEqual: @"verso"]) {
+    
+        UIImage *frente50 = [UIImage imageNamed:@"nota50reais"];
+        [UIView transitionWithView:_nota50ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota50ReaisFrente.image = frente50;
+                           } completion:nil];
+        
+        [_nota50ReaisFrente setAccessibilityIdentifier:@"frente"];
+        
+    }
+    
+    if ([_nota100ReaisFrente.accessibilityIdentifier  isEqual: @"verso"]) {
+    
+        UIImage *frente100 = [UIImage imageNamed:@"nota100reais"];
+        [UIView transitionWithView:_nota100ReaisFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _nota100ReaisFrente.image = frente100;
+                           } completion:nil];
+        
+        [_nota100ReaisFrente setAccessibilityIdentifier:@"frente"];
+        
+    }
 }
 
 

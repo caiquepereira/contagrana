@@ -121,6 +121,79 @@
     _lblTotalMoedas.text=[NSString stringWithFormat:@"%.2f", singleton.total];
     
     
+    if ([_moeda1CentavoFrente.accessibilityIdentifier  isEqual: @"verso"]) {
+        
+        UIImage *frente1 = [UIImage imageNamed:@"moeda1centavo"];
+        [UIView transitionWithView:_moeda1CentavoFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _moeda1CentavoFrente.image = frente1;
+                           } completion:nil];
+        
+        [_moeda1CentavoFrente setAccessibilityIdentifier:@"frente"];
+
+        
+    }
+    
+    if ([_moeda5CentavosFrente.accessibilityIdentifier  isEqual: @"verso"]) {
+        
+        UIImage *frente5 = [UIImage imageNamed:@"moeda5centavos"];
+        [UIView transitionWithView:_moeda5CentavosFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _moeda5CentavosFrente.image = frente5;
+                           } completion:nil];
+        
+        [_moeda5CentavosFrente setAccessibilityIdentifier:@"frente"];
+        
+    }
+    
+    if ([_moeda10CentavosFrente.accessibilityIdentifier  isEqual: @"verso"]) {
+        
+        UIImage *frente10 = [UIImage imageNamed:@"moeda10centavos"];
+        [UIView transitionWithView:_moeda10CentavosFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _moeda10CentavosFrente.image = frente10;
+                           } completion:nil];
+        
+        [_moeda10CentavosFrente setAccessibilityIdentifier:@"frente"];
+    }
+    
+    if ([_moeda25CentavosFrente.accessibilityIdentifier  isEqual: @"verso"]) {
+        UIImage *frente25 = [UIImage imageNamed:@"moeda25centavos"];
+        [UIView transitionWithView:_moeda25CentavosFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _moeda25CentavosFrente.image = frente25;
+                           } completion:nil];
+        
+        [_moeda25CentavosFrente setAccessibilityIdentifier:@"frente"];
+    }
+    
+    if ([_moeda50CentavosFrente.accessibilityIdentifier  isEqual: @"verso"]) {
+
+        UIImage *frente50 = [UIImage imageNamed:@"moeda50centavos"];
+        [UIView transitionWithView:_moeda50CentavosFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _moeda50CentavosFrente.image = frente50;
+                           } completion:nil];
+        
+        [_moeda50CentavosFrente setAccessibilityIdentifier:@"frente"];
+
+        
+    }
+    
+    if ([_moeda1RealFrente.accessibilityIdentifier  isEqual: @"verso"]) {
+        
+        UIImage *frente1Real = [UIImage imageNamed:@"moeda1real"];
+        [UIView transitionWithView:_moeda1RealFrente duration:0.5
+                           options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+                               _moeda1RealFrente.image = frente1Real;
+                           } completion:nil];
+        
+        [_moeda1RealFrente setAccessibilityIdentifier:@"frente"];
+        
+    }
+    
+    
+    
 }
 
 
