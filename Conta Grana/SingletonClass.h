@@ -14,6 +14,7 @@
     float totalMoedas;
     float totalNotas;
     int vezesCalculadas;
+    BOOL primeiraVezRodado;
 }
 
 @property (nonatomic, retain) NSString *someProperty;
@@ -21,6 +22,7 @@
 @property (nonatomic) float totalMoedas;
 @property (nonatomic) float totalNotas;
 @property (nonatomic) int vezesCalculadas;
+@property (nonatomic) BOOL primeiraVezRodado;
 
 
 + (id)sharedManager;

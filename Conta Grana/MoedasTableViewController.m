@@ -213,8 +213,21 @@
     _lblTotalMoedas.text=[NSString stringWithFormat:@"%.2f", singleton.total];
     
     singleton.vezesCalculadas++;
-    if (singleton.vezesCalculadas%3==0) {
-        [Chartboost showInterstitial:CBLocationHomeScreen];
+   
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"HasLaunchedOnce"]) { // app already launched
+        if(singleton.primeiraVezRodado == YES && singleton.vezesCalculadas%5==0){
+            [Chartboost showInterstitial:CBLocationHomeScreen];
+            
+        }else if (singleton.primeiraVezRodado == NO && singleton.vezesCalculadas%3==0) {
+            [Chartboost showInterstitial:CBLocationHomeScreen];
+        }
+        
+    } else {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"HasLaunchedOnce"];
+        [[NSUserDefaults standardUserDefaults] synchronize]; // This is the first launch ever
+        
+        singleton.primeiraVezRodado=YES;
+        
     }
 
 }

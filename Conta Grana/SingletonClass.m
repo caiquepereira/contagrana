@@ -16,6 +16,7 @@
 @synthesize totalNotas;
 @synthesize totalMoedas;
 @synthesize vezesCalculadas;
+@synthesize primeiraVezRodado;
 
 
 
@@ -38,6 +39,7 @@
         totalMoedas=0;
         totalNotas=0;
         vezesCalculadas=0;
+        primeiraVezRodado=NO;
     }
     return self;
 }
