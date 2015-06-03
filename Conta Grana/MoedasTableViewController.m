@@ -94,7 +94,7 @@
 
 
 -(void)viewDidLayoutSubviews{
-    _lblTotalMoedas.text= [NSString stringWithFormat:@"%.2f", singleton.total];
+    _lblTotalMoedas.text= [NSString stringWithFormat:@"%.2llu", singleton.total];
 
 }
 
@@ -118,7 +118,7 @@
     
     singleton.total=0;
     singleton.totalMoedas=0;
-    _lblTotalMoedas.text=[NSString stringWithFormat:@"%.2f", singleton.total];
+    _lblTotalMoedas.text=[NSString stringWithFormat:@"%.2llu", singleton.total];
     
     
     if ([_moeda1CentavoFrente.accessibilityIdentifier  isEqual: @"verso"]) {
@@ -210,7 +210,7 @@
     
     
     singleton.total=singleton.totalMoedas+singleton.totalNotas;
-    _lblTotalMoedas.text=[NSString stringWithFormat:@"%.2f", singleton.total];
+    _lblTotalMoedas.text=[NSString stringWithFormat:@"%.2llu", singleton.total];
     
     singleton.vezesCalculadas++;
    

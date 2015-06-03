@@ -95,7 +95,7 @@
 
 
 -(void)viewDidLayoutSubviews{
-    _lblTotalNotas.text= [NSString stringWithFormat:@"%.2f", singleton.total];
+    _lblTotalNotas.text= [NSString stringWithFormat:@"%.2llu", singleton.total];
 
 }
 
@@ -118,7 +118,7 @@
     
     singleton.totalNotas=0;
     singleton.total=0;
-    _lblTotalNotas.text=[NSString stringWithFormat:@"%.2f", singleton.total];
+    _lblTotalNotas.text=[NSString stringWithFormat:@"%.2llu", singleton.total];
     
     
     if ([_nota2ReaisFrente.accessibilityIdentifier  isEqual: @"verso"]) {
@@ -228,7 +228,16 @@
     singleton.totalNotas=singleton.totalNotas+100*[_qtd100Reais.text floatValue];
 
     singleton.total=singleton.totalNotas+singleton.totalMoedas;
-    _lblTotalNotas.text=[NSString stringWithFormat:@"%.2f", singleton.total];
+    
+    if (singleton.total > 800000000) {
+        //UIAlert de erro numero grande demais
+        
+        //se nao, fazer o q devia fazer msm
+        
+        
+    }
+    
+    _lblTotalNotas.text=[NSString stringWithFormat:@"%.2llu", singleton.total];
     
     singleton.vezesCalculadas++;
     

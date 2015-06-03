@@ -10,17 +10,17 @@
 
 @interface SingletonClass : NSObject{
     NSString *someProperty;
-    float total;
-    float totalMoedas;
-    float totalNotas;
+    unsigned long long total;
+    unsigned long long totalMoedas;
+    unsigned long long totalNotas;
     int vezesCalculadas;
     BOOL primeiraVezRodado;
 }
 
 @property (nonatomic, retain) NSString *someProperty;
-@property (nonatomic) float total;
-@property (nonatomic) float totalMoedas;
-@property (nonatomic) float totalNotas;
+@property (nonatomic) unsigned long long total;
+@property (nonatomic) unsigned long long totalMoedas;
+@property (nonatomic) unsigned long long totalNotas;
 @property (nonatomic) int vezesCalculadas;
 @property (nonatomic) BOOL primeiraVezRodado;
 

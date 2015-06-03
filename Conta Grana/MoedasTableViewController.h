@@ -18,9 +18,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *qtd1Real;
 
 
-@property (nonatomic) float totalNotas;
-@property (nonatomic) float totalMoedas;
-@property (nonatomic) float total;
+@property (nonatomic) unsigned long long totalNotas;
+@property (nonatomic) unsigned long long totalMoedas;
+@property (nonatomic) unsigned long long total;
 
 
 @property (weak, nonatomic) IBOutlet UIImageView *moeda1CentavoFrente;
