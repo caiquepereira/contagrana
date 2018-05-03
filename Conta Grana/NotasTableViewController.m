@@ -126,7 +126,7 @@
         UIImage *frente2 = [UIImage imageNamed:@"nota2reais"];
         [UIView transitionWithView:_nota2ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota2ReaisFrente.image = frente2;
+                               self->_nota2ReaisFrente.image = frente2;
                            } completion:nil];
         
         [_nota2ReaisFrente setAccessibilityIdentifier:@"frente"];
@@ -138,7 +138,7 @@
         UIImage *frente5 = [UIImage imageNamed:@"nota5reais"];
         [UIView transitionWithView:_nota5ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota5ReaisFrente.image = frente5;
+                               self->_nota5ReaisFrente.image = frente5;
                            } completion:nil];
         
         [_nota5ReaisFrente setAccessibilityIdentifier:@"frente"];
@@ -151,7 +151,7 @@
         UIImage *frente10 = [UIImage imageNamed:@"nota10reais"];
         [UIView transitionWithView:_nota10ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota10ReaisFrente.image = frente10;
+                               self->_nota10ReaisFrente.image = frente10;
                            } completion:nil];
         
         [_nota10ReaisFrente setAccessibilityIdentifier:@"frente"];
@@ -164,7 +164,7 @@
         UIImage *frente20 = [UIImage imageNamed:@"nota20reais"];
         [UIView transitionWithView:_nota20ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota20ReaisFrente.image = frente20;
+                               self->_nota20ReaisFrente.image = frente20;
                            } completion:nil];
         
         [_nota20ReaisFrente setAccessibilityIdentifier:@"frente"];
@@ -176,7 +176,7 @@
         UIImage *frente50 = [UIImage imageNamed:@"nota50reais"];
         [UIView transitionWithView:_nota50ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota50ReaisFrente.image = frente50;
+                               self->_nota50ReaisFrente.image = frente50;
                            } completion:nil];
         
         [_nota50ReaisFrente setAccessibilityIdentifier:@"frente"];
@@ -188,7 +188,7 @@
         UIImage *frente100 = [UIImage imageNamed:@"nota100reais"];
         [UIView transitionWithView:_nota100ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota100ReaisFrente.image = frente100;
+                               self->_nota100ReaisFrente.image = frente100;
                            } completion:nil];
         
         [_nota100ReaisFrente setAccessibilityIdentifier:@"frente"];
@@ -268,7 +268,7 @@
         UIImage *verso2 = [UIImage imageNamed:@"nota2_back"];
         [UIView transitionWithView:_nota2ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota2ReaisFrente.image = verso2;
+                               self->_nota2ReaisFrente.image = verso2;
                            } completion:nil];
         
         [_nota2ReaisFrente setAccessibilityIdentifier:@"verso"];
@@ -278,7 +278,7 @@
         UIImage *frente2 = [UIImage imageNamed:@"nota2reais"];
         [UIView transitionWithView:_nota2ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota2ReaisFrente.image = frente2;
+                               self->_nota2ReaisFrente.image = frente2;
                            } completion:nil];
         
         [_nota2ReaisFrente setAccessibilityIdentifier:@"frente"];
@@ -297,7 +297,7 @@
         UIImage *verso5 = [UIImage imageNamed:@"nota5_back"];
         [UIView transitionWithView:_nota5ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota5ReaisFrente.image = verso5;
+                               self->_nota5ReaisFrente.image = verso5;
                            } completion:nil];
         
         [_nota5ReaisFrente setAccessibilityIdentifier:@"verso"];
@@ -307,7 +307,7 @@
         UIImage *frente5 = [UIImage imageNamed:@"nota5reais"];
         [UIView transitionWithView:_nota5ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota5ReaisFrente.image = frente5;
+                               self->_nota5ReaisFrente.image = frente5;
                            } completion:nil];
         
         [_nota5ReaisFrente setAccessibilityIdentifier:@"frente"];
@@ -326,7 +326,7 @@
         UIImage *verso10 = [UIImage imageNamed:@"nota10_back"];
         [UIView transitionWithView:_nota10ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota10ReaisFrente.image = verso10;
+                               self->_nota10ReaisFrente.image = verso10;
                            } completion:nil];
         
         [_nota10ReaisFrente setAccessibilityIdentifier:@"verso"];
@@ -336,7 +336,7 @@
         UIImage *frente10 = [UIImage imageNamed:@"nota10reais"];
         [UIView transitionWithView:_nota10ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota10ReaisFrente.image = frente10;
+                               self->_nota10ReaisFrente.image = frente10;
                            } completion:nil];
         
         [_nota10ReaisFrente setAccessibilityIdentifier:@"frente"];
@@ -355,7 +355,7 @@
         UIImage *verso20 = [UIImage imageNamed:@"nota20_back"];
         [UIView transitionWithView:_nota20ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota20ReaisFrente.image = verso20;
+                               self->_nota20ReaisFrente.image = verso20;
                            } completion:nil];
         
         [_nota20ReaisFrente setAccessibilityIdentifier:@"verso"];
@@ -365,7 +365,7 @@
         UIImage *frente20 = [UIImage imageNamed:@"nota20reais"];
         [UIView transitionWithView:_nota20ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota20ReaisFrente.image = frente20;
+                               self->_nota20ReaisFrente.image = frente20;
                            } completion:nil];
         
         [_nota20ReaisFrente setAccessibilityIdentifier:@"frente"];
@@ -383,7 +383,7 @@
         UIImage *verso50 = [UIImage imageNamed:@"nota50_back"];
         [UIView transitionWithView:_nota50ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota50ReaisFrente.image = verso50;
+                               self->_nota50ReaisFrente.image = verso50;
                            } completion:nil];
         
         [_nota50ReaisFrente setAccessibilityIdentifier:@"verso"];
@@ -393,7 +393,7 @@
         UIImage *frente50 = [UIImage imageNamed:@"nota50reais"];
         [UIView transitionWithView:_nota50ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota50ReaisFrente.image = frente50;
+                               self->_nota50ReaisFrente.image = frente50;
                            } completion:nil];
         
         [_nota50ReaisFrente setAccessibilityIdentifier:@"frente"];
@@ -411,7 +411,7 @@
         UIImage *verso100 = [UIImage imageNamed:@"nota100_back"];
         [UIView transitionWithView:_nota100ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota100ReaisFrente.image = verso100;
+                               self->_nota100ReaisFrente.image = verso100;
                            } completion:nil];
         
         [_nota100ReaisFrente setAccessibilityIdentifier:@"verso"];
@@ -421,7 +421,7 @@
         UIImage *frente100 = [UIImage imageNamed:@"nota100reais"];
         [UIView transitionWithView:_nota100ReaisFrente duration:0.5
                            options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
-                               _nota100ReaisFrente.image = frente100;
+                               self->_nota100ReaisFrente.image = frente100;
                            } completion:nil];
         
         [_nota100ReaisFrente setAccessibilityIdentifier:@"frente"];
