@@ -29,6 +29,8 @@
     
     self.tabBarController.delegate=self;
     
+    
+    
     [_moeda1CentavoFrente setAccessibilityIdentifier:@"frente"];
     [_moeda5CentavosFrente setAccessibilityIdentifier:@"frente"];
     [_moeda10CentavosFrente setAccessibilityIdentifier:@"frente"];

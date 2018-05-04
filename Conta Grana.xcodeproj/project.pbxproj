@@ -11,7 +11,6 @@
 		8F373B521B01283D006C3E9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F373B511B01283D006C3E9E /* AppDelegate.m */; };
 		8F373B581B01283D006C3E9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F373B561B01283D006C3E9E /* Main.storyboard */; };
 		8F373B5A1B01283D006C3E9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F373B591B01283D006C3E9E /* Images.xcassets */; };
-		8F373B5D1B01283D006C3E9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F373B5B1B01283D006C3E9E /* LaunchScreen.xib */; };
 		8F373B691B01283E006C3E9E /* Conta_GranaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F373B681B01283E006C3E9E /* Conta_GranaTests.m */; };
 		8F57A0111B10247900A49D7D /* SingletonClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F57A0101B10247900A49D7D /* SingletonClass.m */; };
 		8F57A0151B102B6400A49D7D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F57A0141B102B6400A49D7D /* StoreKit.framework */; };
@@ -21,6 +20,7 @@
 		8F57A01D1B102BAE00A49D7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F57A01C1B102BAE00A49D7D /* UIKit.framework */; };
 		8FD9E0AF1B03BEC100EFEB83 /* NotasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9E0AE1B03BEC100EFEB83 /* NotasTableViewController.m */; };
 		8FF97B621B0F701500C318F0 /* MoedasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF97B611B0F701500C318F0 /* MoedasTableViewController.m */; };
+		B919B087209C9AB500204CE2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B919B086209C9AB500204CE2 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 		8F373B511B01283D006C3E9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8F373B571B01283D006C3E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F373B591B01283D006C3E9E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8F373B5C1B01283D006C3E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8F373B621B01283D006C3E9E /* Conta GranaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Conta GranaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F373B671B01283D006C3E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F373B681B01283E006C3E9E /* Conta_GranaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Conta_GranaTests.m; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		8FD9E0AE1B03BEC100EFEB83 /* NotasTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotasTableViewController.m; sourceTree = "<group>"; };
 		8FF97B601B0F701500C318F0 /* MoedasTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoedasTableViewController.h; sourceTree = "<group>"; };
 		8FF97B611B0F701500C318F0 /* MoedasTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoedasTableViewController.m; sourceTree = "<group>"; };
+		B919B086209C9AB500204CE2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 				8F57A0101B10247900A49D7D /* SingletonClass.m */,
 				8F373B561B01283D006C3E9E /* Main.storyboard */,
 				8F373B591B01283D006C3E9E /* Images.xcassets */,
-				8F373B5B1B01283D006C3E9E /* LaunchScreen.xib */,
+				B919B086209C9AB500204CE2 /* Launch Screen.storyboard */,
 				8F373B4C1B01283D006C3E9E /* Supporting Files */,
 			);
 			path = "Conta Grana";
@@ -240,7 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F373B581B01283D006C3E9E /* Main.storyboard in Resources */,
-				8F373B5D1B01283D006C3E9E /* LaunchScreen.xib in Resources */,
+				B919B087209C9AB500204CE2 /* Launch Screen.storyboard in Resources */,
 				8F373B5A1B01283D006C3E9E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,14 +292,6 @@
 				8F373B571B01283D006C3E9E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8F373B5B1B01283D006C3E9E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F373B5C1B01283D006C3E9E /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -411,8 +403,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 259HA4RXT4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Conta",
@@ -420,7 +413,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Conta Grana/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "caiquedepaulapereira.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,8 +426,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 259HA4RXT4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Conta",
@@ -442,7 +436,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Conta Grana/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "caiquedepaulapereira.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

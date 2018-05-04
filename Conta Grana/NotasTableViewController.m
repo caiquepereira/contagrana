@@ -26,8 +26,7 @@
     singleton = [SingletonClass sharedManager];
     
     self.tabBarController.delegate=self;
-    
-    
+        
     [_nota2ReaisFrente setAccessibilityIdentifier:@"frente"];
     [_nota5ReaisFrente setAccessibilityIdentifier:@"frente"];
     [_nota10ReaisFrente setAccessibilityIdentifier:@"frente"];
