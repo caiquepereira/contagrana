@@ -14,13 +14,13 @@
 		8F373B691B01283E006C3E9E /* Conta_GranaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F373B681B01283E006C3E9E /* Conta_GranaTests.m */; };
 		8F57A0111B10247900A49D7D /* SingletonClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F57A0101B10247900A49D7D /* SingletonClass.m */; };
 		8F57A0151B102B6400A49D7D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F57A0141B102B6400A49D7D /* StoreKit.framework */; };
-		8F57A0171B102B8000A49D7D /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F57A0161B102B8000A49D7D /* Chartboost.framework */; };
 		8F57A0191B102B9200A49D7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F57A0181B102B9200A49D7D /* Foundation.framework */; };
 		8F57A01B1B102B9A00A49D7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F57A01A1B102B9A00A49D7D /* CoreGraphics.framework */; };
 		8F57A01D1B102BAE00A49D7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F57A01C1B102BAE00A49D7D /* UIKit.framework */; };
 		8FD9E0AF1B03BEC100EFEB83 /* NotasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9E0AE1B03BEC100EFEB83 /* NotasTableViewController.m */; };
 		8FF97B621B0F701500C318F0 /* MoedasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF97B611B0F701500C318F0 /* MoedasTableViewController.m */; };
 		B919B087209C9AB500204CE2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B919B086209C9AB500204CE2 /* Launch Screen.storyboard */; };
+		B969970720ADEF600019764D /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F57A0161B102B8000A49D7D /* Chartboost.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,11 +63,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B969970720ADEF600019764D /* Chartboost.framework in Frameworks */,
 				8F57A01D1B102BAE00A49D7D /* UIKit.framework in Frameworks */,
 				8F57A01B1B102B9A00A49D7D /* CoreGraphics.framework in Frameworks */,
 				8F57A0191B102B9200A49D7D /* Foundation.framework in Frameworks */,
 				8F57A0151B102B6400A49D7D /* StoreKit.framework in Frameworks */,
-				8F57A0171B102B8000A49D7D /* Chartboost.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +87,7 @@
 				8F373B4B1B01283D006C3E9E /* Conta Grana */,
 				8F373B651B01283D006C3E9E /* Conta GranaTests */,
 				8F373B4A1B01283D006C3E9E /* Products */,
+				B969970620ADEF600019764D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +157,13 @@
 			);
 			name = Frameworks;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		B969970620ADEF600019764D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,19 +410,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 259HA4RXT4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Conta",
-					Grana,
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Conta Grana/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "caiquedepaulapereira.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -425,19 +430,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 259HA4RXT4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Conta",
-					Grana,
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Conta Grana/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "caiquedepaulapereira.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
