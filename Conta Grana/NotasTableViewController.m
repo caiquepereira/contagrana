@@ -94,7 +94,7 @@
 
 
 -(void)viewDidLayoutSubviews{
-    _lblTotalNotas.text= [NSString stringWithFormat:@"%.2llu", singleton.total];
+    _lblTotalNotas.text= [NSString stringWithFormat:@"%.2Lf", singleton.total];
 
 }
 
@@ -117,7 +117,7 @@
     
     singleton.totalNotas=0;
     singleton.total=0;
-    _lblTotalNotas.text=[NSString stringWithFormat:@"%.2llu", singleton.total];
+    _lblTotalNotas.text=[NSString stringWithFormat:@"%.2Lf", singleton.total];
     
     
     if ([_nota2ReaisFrente.accessibilityIdentifier  isEqual: @"verso"]) {
@@ -236,7 +236,7 @@
         
     }
     
-    _lblTotalNotas.text=[NSString stringWithFormat:@"%.2llu", singleton.total];
+    _lblTotalNotas.text=[NSString stringWithFormat:@"%.2Lf", singleton.total];
     
     singleton.vezesCalculadas++;
     

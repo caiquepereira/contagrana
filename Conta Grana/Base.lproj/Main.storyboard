@@ -418,13 +418,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="moeda1centavo" translatesAutoresizingMaskIntoConstraints="NO" id="6WA-St-iKD">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moeda1centavo" translatesAutoresizingMaskIntoConstraints="NO" id="6WA-St-iKD">
                                                     <rect key="frame" x="8" y="0.0" width="66" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="6WA-St-iKD" secondAttribute="height" multiplier="66:43" id="IlX-Hb-Frk"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="1 centavo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4Z-OL-rIL">
-                                                    <rect key="frame" x="82" y="0.0" width="518" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="1 centavo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4Z-OL-rIL">
+                                                    <rect key="frame" x="82" y="0.0" width="293" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     <connections>
@@ -432,6 +433,16 @@
                                                     </connections>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="n4Z-OL-rIL" firstAttribute="leading" secondItem="6WA-St-iKD" secondAttribute="trailing" constant="8" id="5d2-ye-inM"/>
+                                                <constraint firstItem="n4Z-OL-rIL" firstAttribute="top" secondItem="yNs-VB-0gt" secondAttribute="top" id="JGO-4C-kqz"/>
+                                                <constraint firstItem="6WA-St-iKD" firstAttribute="top" secondItem="yNs-VB-0gt" secondAttribute="top" id="Rfo-ne-bjk"/>
+                                                <constraint firstAttribute="bottom" secondItem="6WA-St-iKD" secondAttribute="bottom" constant="0.67000000000000004" id="Und-Lp-4bl"/>
+                                                <constraint firstAttribute="bottom" secondItem="n4Z-OL-rIL" secondAttribute="bottom" constant="0.67000000000000004" id="XGZ-GE-5Se"/>
+                                                <constraint firstItem="6WA-St-iKD" firstAttribute="leading" secondItem="yNs-VB-0gt" secondAttribute="leading" constant="8" id="fDc-Ae-1kw"/>
+                                                <constraint firstItem="n4Z-OL-rIL" firstAttribute="leading" secondItem="6WA-St-iKD" secondAttribute="trailing" constant="8" id="qyj-cE-cPi"/>
+                                                <constraint firstAttribute="trailing" secondItem="n4Z-OL-rIL" secondAttribute="trailing" id="zYL-NS-W5m"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="28O-RN-LhJ">
@@ -441,13 +452,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="moeda5centavos" translatesAutoresizingMaskIntoConstraints="NO" id="gLp-Nb-rfH">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moeda5centavos" translatesAutoresizingMaskIntoConstraints="NO" id="gLp-Nb-rfH">
                                                     <rect key="frame" x="8" y="0.0" width="66" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="gLp-Nb-rfH" secondAttribute="height" multiplier="66:43" id="FwR-jk-z6G"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="5 centavos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5f-Xn-sbZ">
-                                                    <rect key="frame" x="82" y="0.0" width="518" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="5 centavos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5f-Xn-sbZ">
+                                                    <rect key="frame" x="82" y="0.0" width="293" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     <connections>
@@ -455,6 +467,20 @@
                                                     </connections>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gLp-Nb-rfH" firstAttribute="leading" secondItem="nDU-mB-AOw" secondAttribute="leading" constant="8" id="5zP-IC-33N"/>
+                                                <constraint firstAttribute="bottom" secondItem="j5f-Xn-sbZ" secondAttribute="bottom" constant="0.67000000000000004" id="6Xb-bV-GP8"/>
+                                                <constraint firstItem="gLp-Nb-rfH" firstAttribute="top" secondItem="nDU-mB-AOw" secondAttribute="top" id="9Jy-Sd-oww"/>
+                                                <constraint firstItem="j5f-Xn-sbZ" firstAttribute="top" secondItem="nDU-mB-AOw" secondAttribute="top" id="WVW-1C-NBQ"/>
+                                                <constraint firstItem="j5f-Xn-sbZ" firstAttribute="leading" secondItem="gLp-Nb-rfH" secondAttribute="trailing" constant="8" id="cdE-iP-E0f"/>
+                                                <constraint firstItem="j5f-Xn-sbZ" firstAttribute="leading" secondItem="gLp-Nb-rfH" secondAttribute="trailing" constant="8" id="gtl-nJ-adA"/>
+                                                <constraint firstAttribute="bottom" secondItem="gLp-Nb-rfH" secondAttribute="bottom" constant="0.67000000000000004" id="pa8-EI-d0t"/>
+                                                <constraint firstAttribute="bottom" secondItem="gLp-Nb-rfH" secondAttribute="bottom" constant="0.67000000000000004" id="rPV-nP-8tc"/>
+                                                <constraint firstItem="j5f-Xn-sbZ" firstAttribute="leading" secondItem="gLp-Nb-rfH" secondAttribute="trailing" constant="8" id="rZH-C2-Vb2"/>
+                                                <constraint firstAttribute="trailing" secondItem="j5f-Xn-sbZ" secondAttribute="trailing" id="sNB-S5-1iT"/>
+                                                <constraint firstItem="gLp-Nb-rfH" firstAttribute="top" secondItem="nDU-mB-AOw" secondAttribute="top" id="tRI-2x-rhT"/>
+                                                <constraint firstItem="gLp-Nb-rfH" firstAttribute="leading" secondItem="nDU-mB-AOw" secondAttribute="leading" constant="8" id="xyM-hD-uvl"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ham-NG-QRl">
@@ -464,13 +490,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="moeda10centavos" translatesAutoresizingMaskIntoConstraints="NO" id="KuO-B9-LBt">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moeda10centavos" translatesAutoresizingMaskIntoConstraints="NO" id="KuO-B9-LBt">
                                                     <rect key="frame" x="8" y="0.0" width="66" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="KuO-B9-LBt" secondAttribute="height" multiplier="66:43" id="OjN-Ly-sp7"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="10 centavos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k7O-vg-Lfe">
-                                                    <rect key="frame" x="82" y="0.0" width="518" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="10 centavos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k7O-vg-Lfe">
+                                                    <rect key="frame" x="82" y="0.0" width="293" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     <connections>
@@ -478,6 +505,16 @@
                                                     </connections>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="k7O-vg-Lfe" secondAttribute="bottom" constant="0.67000000000000004" id="2Kj-Ss-JfF"/>
+                                                <constraint firstItem="KuO-B9-LBt" firstAttribute="top" secondItem="ALM-xI-sLr" secondAttribute="top" id="CNJ-mn-5nj"/>
+                                                <constraint firstAttribute="bottom" secondItem="KuO-B9-LBt" secondAttribute="bottom" constant="0.67000000000000004" id="Ecn-Mp-22y"/>
+                                                <constraint firstItem="KuO-B9-LBt" firstAttribute="leading" secondItem="ALM-xI-sLr" secondAttribute="leading" constant="8" id="Ng3-Op-PUi"/>
+                                                <constraint firstItem="k7O-vg-Lfe" firstAttribute="leading" secondItem="KuO-B9-LBt" secondAttribute="trailing" constant="8" id="akd-fP-abE"/>
+                                                <constraint firstItem="k7O-vg-Lfe" firstAttribute="top" secondItem="ALM-xI-sLr" secondAttribute="top" id="ilc-F5-yYM"/>
+                                                <constraint firstItem="k7O-vg-Lfe" firstAttribute="leading" secondItem="KuO-B9-LBt" secondAttribute="trailing" constant="8" id="n8X-nR-qLa"/>
+                                                <constraint firstAttribute="trailing" secondItem="k7O-vg-Lfe" secondAttribute="trailing" id="tmg-N7-zH3"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AcR-9w-KwT">
@@ -487,13 +524,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="moeda25centavos" translatesAutoresizingMaskIntoConstraints="NO" id="irL-e7-u31">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moeda25centavos" translatesAutoresizingMaskIntoConstraints="NO" id="irL-e7-u31">
                                                     <rect key="frame" x="8" y="0.0" width="66" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="irL-e7-u31" secondAttribute="height" multiplier="66:43" id="plU-X8-ogH"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="25 centavos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qw0-I5-0c4">
-                                                    <rect key="frame" x="82" y="-1" width="518" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="25 centavos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qw0-I5-0c4">
+                                                    <rect key="frame" x="82" y="0.0" width="293" height="42"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     <connections>
@@ -501,6 +539,16 @@
                                                     </connections>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="irL-e7-u31" firstAttribute="top" secondItem="aqY-8b-POF" secondAttribute="top" id="00X-V1-4d6"/>
+                                                <constraint firstAttribute="bottom" secondItem="irL-e7-u31" secondAttribute="bottom" constant="0.67000000000000004" id="3sN-um-1fM"/>
+                                                <constraint firstItem="qw0-I5-0c4" firstAttribute="leading" secondItem="irL-e7-u31" secondAttribute="trailing" constant="8" id="5nS-4y-Pz8"/>
+                                                <constraint firstItem="qw0-I5-0c4" firstAttribute="leading" secondItem="irL-e7-u31" secondAttribute="trailing" constant="8" id="5nv-VH-JCM"/>
+                                                <constraint firstAttribute="bottom" secondItem="qw0-I5-0c4" secondAttribute="bottom" constant="1.6699999999999999" id="YcX-MI-cp9"/>
+                                                <constraint firstAttribute="trailing" secondItem="qw0-I5-0c4" secondAttribute="trailing" id="dwX-27-XqJ"/>
+                                                <constraint firstItem="qw0-I5-0c4" firstAttribute="top" secondItem="aqY-8b-POF" secondAttribute="top" id="i51-tS-WBX"/>
+                                                <constraint firstItem="irL-e7-u31" firstAttribute="leading" secondItem="aqY-8b-POF" secondAttribute="leading" constant="8" id="yVN-zZ-vJa"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jw6-MO-Pzr">
@@ -510,13 +558,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="moeda50centavos" translatesAutoresizingMaskIntoConstraints="NO" id="81T-9A-dID">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moeda50centavos" translatesAutoresizingMaskIntoConstraints="NO" id="81T-9A-dID">
                                                     <rect key="frame" x="8" y="0.0" width="66" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="81T-9A-dID" secondAttribute="height" multiplier="66:43" id="ynV-Yn-0kS"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="50 centavos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4rE-Kp-6bn">
-                                                    <rect key="frame" x="82" y="-1" width="518" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="50 centavos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4rE-Kp-6bn">
+                                                    <rect key="frame" x="82" y="0.0" width="293" height="42"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     <connections>
@@ -524,6 +573,16 @@
                                                     </connections>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="4rE-Kp-6bn" secondAttribute="bottom" constant="1.6699999999999999" id="7qo-E0-SBh"/>
+                                                <constraint firstItem="81T-9A-dID" firstAttribute="leading" secondItem="4e4-4U-cvk" secondAttribute="leading" constant="8" id="SkA-jf-0PT"/>
+                                                <constraint firstAttribute="bottom" secondItem="81T-9A-dID" secondAttribute="bottom" constant="0.67000000000000004" id="X0A-Rv-3gS"/>
+                                                <constraint firstItem="4rE-Kp-6bn" firstAttribute="leading" secondItem="81T-9A-dID" secondAttribute="trailing" constant="8" id="bTg-h1-PhN"/>
+                                                <constraint firstItem="81T-9A-dID" firstAttribute="top" secondItem="4e4-4U-cvk" secondAttribute="top" id="kvS-pb-iI3"/>
+                                                <constraint firstAttribute="trailing" secondItem="4rE-Kp-6bn" secondAttribute="trailing" id="uFR-8e-mut"/>
+                                                <constraint firstItem="4rE-Kp-6bn" firstAttribute="leading" secondItem="81T-9A-dID" secondAttribute="trailing" constant="8" id="y9P-1S-elK"/>
+                                                <constraint firstItem="4rE-Kp-6bn" firstAttribute="top" secondItem="4e4-4U-cvk" secondAttribute="top" id="zSi-n2-ybk"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8Iq-Ai-OjE">
@@ -533,13 +592,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="moeda1real" translatesAutoresizingMaskIntoConstraints="NO" id="Nmi-vH-u76">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moeda1real" translatesAutoresizingMaskIntoConstraints="NO" id="Nmi-vH-u76">
                                                     <rect key="frame" x="8" y="0.0" width="66" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Nmi-vH-u76" secondAttribute="height" multiplier="66:43" id="PCz-KX-pY4"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="1 real" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T1K-GK-62m">
-                                                    <rect key="frame" x="82" y="-1" width="518" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="1 real" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T1K-GK-62m">
+                                                    <rect key="frame" x="82" y="0.0" width="293" height="42"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     <connections>
@@ -547,6 +607,16 @@
                                                     </connections>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Nmi-vH-u76" secondAttribute="bottom" constant="0.67000000000000004" id="150-aX-9cU"/>
+                                                <constraint firstItem="T1K-GK-62m" firstAttribute="leading" secondItem="Nmi-vH-u76" secondAttribute="trailing" constant="8" id="Dog-A0-Gdj"/>
+                                                <constraint firstItem="Nmi-vH-u76" firstAttribute="leading" secondItem="ug8-9R-Ub3" secondAttribute="leading" constant="8" id="Hr7-1E-2vP"/>
+                                                <constraint firstAttribute="bottom" secondItem="T1K-GK-62m" secondAttribute="bottom" constant="1.6699999999999999" id="HrD-C1-tyL"/>
+                                                <constraint firstItem="Nmi-vH-u76" firstAttribute="top" secondItem="ug8-9R-Ub3" secondAttribute="top" id="Ivg-Te-x9K"/>
+                                                <constraint firstAttribute="trailing" secondItem="T1K-GK-62m" secondAttribute="trailing" id="LHl-13-iqs"/>
+                                                <constraint firstItem="T1K-GK-62m" firstAttribute="leading" secondItem="Nmi-vH-u76" secondAttribute="trailing" constant="8" id="OCY-ns-58R"/>
+                                                <constraint firstItem="T1K-GK-62m" firstAttribute="top" secondItem="ug8-9R-Ub3" secondAttribute="top" id="fdt-YZ-r6Y"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell hidden="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8iy-7I-oOf">
